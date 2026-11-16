@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Brushify</h1>
+        <div id="editor" contenteditable="true"></div>
+        <br>
+       
+        <button id="Download">Download</button>
+        <br>
+        <div id="parent">
+            <div id="Backgroundcolor">
+                <h2>Choose background color</h2>
+                <br>
+                <button id="bgc"  onclick="bgcolor('red')" style="background-color: red;"></button>
+                <button id="bgc" onclick="bgcolor('green')" style="background-color: green;"></button>
+                <button id="bgc" onclick="bgcolor('blue')" style="background-color: blue;"></button>
+            </div>
+            <div id="Textcolor">
+                <h1>TextColor</h1>
+            <button id="bgc"  onclick="color('red')" style="background-color: red;"></button>
+            <button id="bgc"  onclick="color('green')" style="background-color: green;"></button>
+            <button id="bgc"  onclick="color('blue')" style="background-color: blue;"></button>
+            </div>
+            <div id ="Fontsize">
+            <h1>FontStyle</h1>
+            <button class="font" onclick="fontstyle('cursive')">Hello</button>
+            <button class="font" onclick="fontstyle('sans-serif')">Hello</button>
+            <button class="font" onclick="fontstyle('Edwardian script')">Hello</button>
+            </div>
+        </div>
+    </center>
+    <script>
+        function bgcolor(clr){
+            document.getElementById('editor').style.backgroundColor = clr
+        }
+        function color(clr){
+            document.getElementById('editor').style.color = clr
+        }
+        function fontstyle(fnt){
+            document.getElementById('editor').style.fontFamily= fnt
+        }
+         
+
+    </script>
+
+    
+</body>
+</html>
